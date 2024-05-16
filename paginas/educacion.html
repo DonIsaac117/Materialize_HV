@@ -3,89 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>educacion</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Estudios</title>
+    <!-- Enlace al archivo CSS de Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        /* Ajustes de estilo personalizados */
+        body {
+            background: rgb(206, 244, 205);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Para que el footer siempre esté en la parte inferior */
+        }
+        header nav {
+            background-color: red; /* Color de fondo del navbar */
+        }
+        .tittle {
+            margin-top: 30px; /* Espacio entre el título y el contenido */
+        }
+        .descrip {
+            margin-bottom: 30px; /* Espacio entre el contenido y la tabla */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 3px solid black;
+        }
+        th, td {
+            text-align: center;
+            padding: 8px;
+            border: 1px solid black;
+        }
+        th {
+            background-color: #f0f4c3; /* Color de fondo de las celdas de encabezado */
+        }
+        footer {
+            background-color: #f0f4c3; /* Color de fondo del footer */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; /* El footer estará siempre al final de la página */
+        }
+    </style>
 </head>
-
-<body> 
+<body>
 
     <header>
-
-        <div class="container-fluid full-width-container teal lighten-2">
-            <nav class="nav-wrapper red">
-                <a href="#" class="brand-logo right">HV Isaac Espitia</a>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">  
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li> 
-                    <li><a href="educacion.html">Educacion</a></li>
-                    <li><a href="referencias.html">Referencias</a></li>
-                    <li><a href="habilidades.html">Habilidades</a></i></li> 
-                </ul>
-            </nav>
-
+        <nav class="nav-wrapper">
+            <a href="#" class="brand-logo right">HV Isaac Espitia</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="educacion.html">Educacion</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section class="section row left-align">
 
-        <div class="section">
+    <section class="section row left-align">
+        <div class="container">
             <h2 class="tittle">ESTUDIOS</h2>
             <div class="descrip">
                 <p>
-                    En la siguiente tabla que aparece a continuacion se puede visualizar los estudios academicos que he tenido a lo largo de mi vida, es decir, los lugares en los que me he capacitado practicado y adquirido conocimiento la tabla esta dividida por su encabezado donde se muestran el año, el lugar donde adquiri el estudio y conocimiento y finalmente el titulo obtenido.
+                    En la siguiente tabla se pueden visualizar los estudios académicos que he tenido a lo largo de mi vida, es decir, los lugares donde me he capacitado, practicado y adquirido conocimientos. La tabla está dividida por su encabezado donde se muestran el año, el lugar donde adquirí el estudio y conocimiento, y finalmente el título obtenido.
                 </p>
             </div>
 
-        </div>
-
-
-        <div class="divider"></div>
-
-        <div class="container">
-            <table style="border: 3px solid black;" class="centered">
+            <table class="striped highlight centered #bbdefb blue lighten-4">
                 <caption>Estudios</caption>
-                <tbody>
+                <thead>
                     <tr>
-                        <!-- Aplica la clase center-align a las etiquetas th para centrar su contenido -->
-                        <th class="center-align">AÑO</th>
-                        <th class="center-align">LUGAR</th>
-                        <th class="center-align">TÍTULO</th>
+                        <th>AÑO</th>
+                        <th>LUGAR</th>
+                        <th>TÍTULO</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td>2011-2016</td>
                         <td>I.E.D RICARDO GONZALES</td>
                         <td>Primaria Básica</td>
                     </tr>
                     <tr>
-                        <td>20-2021</td>
+                        <td>2017-2021</td>
                         <td>I.E.D RICARDO HINESTROZA DAZA</td>
                         <td>Bachiller Técnico en Sistemas</td>
                     </tr>
                     <tr>
                         <td>2023</td>
-                        <td rowspan="2">SENA</td>
-                        <td>Complementario en herramientas ofimaticas</td>
+                        <td>SENA</td>
+                        <td>Complementario en herramientas ofimáticas</td>
                     </tr>
                     <tr>
                         <td>2022-2024</td>
-                        <td>Tecnólogo en Analisis y desarrllo de software</td>
+                        <td>SENA</td>
+                        <td>Tecnólogo en Análisis y Desarrollo de Software</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        
-        
-
-        
-
-        <footer>
-            &copy; 2024
-        </footer>
-            
     </section>
 
+    <footer>
+        &copy; 2024
+    </footer>
 
-
+    <!-- Enlace al archivo JS de Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

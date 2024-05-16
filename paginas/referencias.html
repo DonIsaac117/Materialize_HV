@@ -5,69 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Referencias</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
     <title>Formulario</title>
+    <style>
+        /* Estilos para el contenedor */
+        .full-screen-container {
+            width: 100vw; /* Ancho del 100% del viewport */
+            height: 100vh; /* Alto del 100% del viewport */
+            background-color: lightblue; /* Color de fondo para visualización */
+        }
+    </style>
+    
 </head>
 <body>
 
-    <header>
-        
-        <div class="bienvenido">
-            <h1 class="titulo">Referencias | Jorge Isaac Espitia Cardozo</h1>
-        </div>
 
-            <nav>
-                <ol>  
-                    <a href="../index.html" class="inicio">
-                        <li>Inicio <i class="fas fa-home"></i></li> 
-                        </a>
-                    <a href="Contacto.html"> 
-                        <li> Contacto   <i class="fas fa-envelope"></i></li> 
-                        </a>
-                    <a href="educacion.html">
-                        <li>Educacion   <i class="fas fa-graduation-cap"></i></li>
-                        </a>
-                    <a href="referencias.html">
-                        <li>Referencias   <i class="fas fa-users"></i></li>
-                        </a>
-                    <a href="habilidades.html">
-                        <li>Habilidades<i class="fas fa-laptop-code"></i></li>
-                        </a>
-                </ol>
+
+        <div class="container-fluid full-width-container teal lighten-2">
+            <nav class="nav-wrapper red">
+                <a href="#" class="brand-logo right">HV Isaac Espitia</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">  
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li> 
+                    <li><a href="educacion.html">Educacion</a></li>
+                    <li><a href="referencias.html">Referencias</a></li>
+                    <li><a href="habilidades.html">Habilidades</a></i></li> 
+                </ul>
             </nav>
 
     </header>
 
+    <div class="full-screen-container">
 
-
-    <section class="ref">
+        <section class="container center-align">
             <h2 class="tittle">REFERENCIAS</h2>
             <div class="descrip">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea praesentium, libero fuga, ipsam obcaecati dolorem laboriosam quisquam sunt aspernatur hic voluptatibus deserunt repellendus reiciendis, tempore similique non aut iusto corporis ab. Praesentium doloremque quasi est modi deleniti ullam vitae earum recusandae soluta.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adi  pisicing elit. Perspiciatis ea praesentium, libero fuga, ipsam obcaecati dolorem laboriosam quisquam sunt aspernatur hic voluptatibus deserunt repellendus reiciendis, tempore similique non aut iusto corporis ab. Praesentium doloremque quasi est modi deleniti ullam vitae earum recusandae soluta.</p>
             </div>
-        <ol>
-            
-            <li>
-                <img src="../IMAGENES/paisaje2.jpg" alt="">
-                Jhonny Guerrero <br>
-                TEL: (57) 3163601029
-                </li>
-            
-            <li> 
-                <img src="../IMAGENES/paisaje2.jpg" alt="">
-                Maria Angelica C <br>
-                TEL: (57) 317309322
-                </li>
-                
-            <li> 
-                <img src="../IMAGENES/paisaje2.jpg" alt="">
-                Maria Angelica 2 <br>
-                TEL: (57) 320459438
-                </li>
-        </ol>
-    </section>
 
+           
+    </section>
+    <div class="carousel">
+        
+        <a class="carousel-item" href="#one!"><img src="../IMAGENES/paisaje2.jpg" width="650px"></a>
+        <a class="carousel-item" href="#two!"><img src="../IMAGENES/paisaje3.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="../IMAGENES/paisaje4.jpg"></a>
+      </div>
     <footer>
         &copy; 2024
     </footer>
+    </div>
+
+
+    <script>
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+          
+        </script>
+       
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>

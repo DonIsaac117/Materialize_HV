@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Habilidades</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <style>
         body, html {
             display: flex;
@@ -17,64 +15,73 @@
         }
         main {
             flex: 1 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
-
+        footer {
+            flex-shrink: 0;
+        }
     </style>
-    <script>
-        function redireccionar() {
-            window.location.href = '../index.html';
-        }
-    </script>
 </head>
-<body class="teal lighten-2">
+<body>
+
+    <nav class="nav-wrapper red">
+        <div class="container">
+            <a href="#" class="brand-logo right">HV Isaac Espitia</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">  
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Contacto.html">Contacto</a></li> 
+                <li><a href="educacion.html">Educacion</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li> 
+            </ul>
+        </div>
+    </nav>
 
     <main class="container">
         <div class="row">
-            <form class="col s12 indigo darken-4 white-text card-panel" method="get">
-                <h1 class="center-align">Formulario de contacto</h1>
-
-                <div class="input-field">
-                    <label for="nombre">Nombre</label>
-                    <input class="white-text" type="text" id="nombre" name="nombre" placeholder="Nombre de la empresa">
+            <div class="col s12 center-align">
+                <h2>HABILIDADES</h2>
+            </div>
+            <div class="col s6">
+                <div class="card red lighten-4">
+                    <div class="card-content">
+                        <span class="card-title">Diseño</span>
+                        <p>Me gusta diseñar, aplico bien las paletas de colores, los espacios y la organización de los elementos que conforman la interfaz gráfica de la aplicación o página web.</p>
+                    </div>
                 </div>
-
-                <div class="input-field">
-                    <label for="nombre2">Nombre del reclutador</label>
-                    <input class="white-text" type="text" id="nombre2" name="nombre2" placeholder="Nombre del funcionario">
+            </div>
+            <div class="col s6">
+                <div class="card pink lighten-4">
+                    <div class="card-content">
+                        <span class="card-title">Inglés</span>
+                        <p>Conozco los fundamentos básicos del lenguaje y algunas estructuras. Mi fuerte principal es la lectura, pero también puedo escuchar y hablar las palabras que tengo más claras.</p>
+                    </div>
                 </div>
-
-                <div class="input-field">
-                    <label for="direccion">Dirección</label>
-                    <input class="white-text" type="text" id="direccion" name="direccion" placeholder="Dirección de la empresa">
+            </div>
+            <div class="col s6">
+                <div class="card purple lighten-4">
+                    <div class="card-content">
+                        <span class="card-title">Trabajo en Equipo</span>
+                        <p>Siempre he estado acostumbrado a trabajar en compañía de un equipo. Tengo buena comunicación con las personas para que me entiendan y sé manejar las diferentes situaciones.</p>
+                    </div>
                 </div>
-
-                <div class="input-field">
-                    <label for="numero">Número</label>
-                    <input class="white-text" type="tel" id="numero" name="numero" placeholder="Teléfono de contacto">
+            </div>
+            <div class="col s6">
+                <div class="card deep-purple lighten-4">
+                    <div class="card-content">
+                        <span class="card-title">Bases de Datos</span>
+                        <p>Siempre he tenido interés en la elaboración de bases de datos. Le he dedicado bastante tiempo y conozco bien cómo estructurar las tablas, sus relaciones y crear consultas.</p>
+                    </div>
                 </div>
-
-                <div class="input-field">
-                    <label for="email">Email</label>
-                    <input class="white-text" type="email" id="email" name="email" placeholder="Correo de contacto">
-                </div>
-
-                <div class="center-align">
-                    <button class="waves-effect waves-light btn" type="submit">Enviar</button>
-                    <a class="waves-effect waves-light btn" onclick="redireccionar(); return false;">Volver</a>
-                    <button class="waves-effect waves-light btn" type="reset">Limpiar</button>
-                </div>
-            </form>
+            </div>
         </div>
     </main>
 
     <footer class="page-footer teal accent-1 center-align">
-        <div class="container black-text">
-            © 2014 Copyright Text
+        <div class="container">
+            &copy; 2024
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

@@ -5,61 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habilidades</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body, html {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        
-        <div class="bienvenido">
-            <h1 class="titulo">Habilidades | Jorge Isaac Espitia Cardozo</h1>
+    <nav class="nav-wrapper red">
+        <div class="container">
+            <a href="#" class="brand-logo right">HV Isaac Espitia</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">  
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Contacto.html">Contacto</a></li> 
+                <li><a href="educacion.html">Educacion</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li> 
+            </ul>
         </div>
+    </nav>
 
-            <nav>
-                <ol>  
-                    <a href="../index.html" class="inicio">
-                        <li>Inicio <i class="fas fa-home"></i></li> 
-                        </a>
-                    <a href="Contacto.html"> 
-                        <li> Contacto   <i class="fas fa-envelope"></i></li> 
-                        </a>
-                    <a href="educacion.html">
-                        <li>Educacion   <i class="fas fa-graduation-cap"></i></li>
-                        </a>
-                    <a href="referencias.html">
-                        <li>Referencias   <i class="fas fa-users"></i></li>
-                        </a>
-                    <a href="habilidades.html">
-                        <li>Habilidades<i class="fas fa-laptop-code"></i></li>
-                        </a>
-                </ol>
-            </nav>
+    <main class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h2>HABILIDADES</h2>
+            </div>
+            <div class="col s6">
+                <div class="card red lighten-4">
+                    <div class="card-content">
+                        <span class="card-title">Diseño</span>
+                        <p>Me gusta diseñar, aplico bien las paletas de colores, los espacios y la organización de los elementos que conforman la interfaz gráfica de la aplicación o página web.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card pink lighten-4">
+                    <div class="card-content">
+                        <span class="card-title">Inglés</span>
+                        <p>Conozco los fundamentos básicos del lenguaje y algunas estructuras. Mi fuerte principal es la lectura, pero también puedo escuchar y hablar las palabras que tengo más claras.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card purple lighten-4">
+                    <div class="card-content">
+                        <span class="card-title">Trabajo en Equipo</span>
+                        <p>Siempre he estado acostumbrado a trabajar en compañía de un equipo. Tengo buena comunicación con las personas para que me entiendan y sé manejar las diferentes situaciones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card deep-purple lighten-4">
+                    <div class="card-content">
+                        <span class="card-title">Bases de Datos</span>
+                        <p>Siempre he tenido interés en la elaboración de bases de datos. Le he dedicado bastante tiempo y conozco bien cómo estructurar las tablas, sus relaciones y crear consultas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    </header>
-    
-    <section class="skills">
-        <h2 class="tittle">HABILIDADES</h2>
-        <ul class="habilidades">
-            <li class="hab">Diseño <br>
-                <i></i><div class="barra1"></div>
-            <p class="phab">Me gusta diseñar, Aplico bien las paletas de colores, los espacios y la organizacion de los elementos que conforman la interfaz grafica de la aplicación o pagina web</p></li>
-            <li class="hab">Ingles <br>
-                <i></i><div class="barra2"></div>
-            <p class="phab">Se los fundamentos basicos del lenguaje y algunas estructuras, mi fuerte principal es la lectura pero tambien puedo escuchar y hablar las palabras que tengo mas claras</p></li>
-            <li class="hab">Trabajo en Equipo <br>
-                <i></i><div class="barra3"></div>
-            <p class="phab">Siempre he aconstumbrado a trabajar en compañia de un Equipo, tengo buena comunicación con las personas para que me entiendan y se manejar las diferentes situaciones</p></li>
-            <li class="hab">Bases de datos <br>
-                <i></i><div class="barra4"></div>
-            <p class="phab">Siempre he tenido interes en la elaboración de las bases de datos, le he dedicado bastante tiempo y conozco bien como estructurar las tablas, sus relaciónes y crear consultas</p></li>
-        </ul>
-    </section>
-
-    <footer>
-        &copy; 2024
+    <footer class="page-footer teal accent-1 center-align">
+        <div class="container">
+            &copy; 2024
+        </div>
     </footer>
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
